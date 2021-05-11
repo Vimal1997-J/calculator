@@ -1,0 +1,50 @@
+<html>
+    <head>
+        <title>
+            calculater
+        </title>
+        <link rel="stylesheet" href="D.CSS"/>
+        <script src="NN.js" async defer></script>
+          
+    </head> 
+    <body>
+        
+        <center>
+            <div class="container">
+
+                <button >D A R K   M O D E</button>
+                <P style="text-align: center;"><a href="L.html">click</a></P>
+                <h1>calculater</h1>
+            <div class="margin-row">
+                <input type="text" class="result" id="result" placeholder="result" readonly />
+                <input type="butten" class="clear" onclick="clearscreen()" value="c" readonly/>
+            </div>
+            <div class="margin-row" >
+                <input type="butten" value="1" onclick="livescreen(1)" id="one"  readonly />
+                <input type="butten" value="2" onclick="livescreen(2)" id="two"  readonly/>
+                <input type="butten" value="3" onclick="livescreen(3)" id="three" readonly />
+                <input type="butten" value="+" onclick="livescreen('+')" />
+            </div>
+            <div class="margin-row">
+                <input type="butten" value="4" onclick="livescreen(4)" id="four" readonly />
+                <input type="butten" value="5" onclick="livescreen(5)" id="five"  readonly/>
+                <input type="butten" value="6" onclick="livescreen(6)" id="six"  readonly/>
+                <input type="butten" value="-" onclick="livescreen('-')" readonly/>
+            </div>
+            <div class="margin-row">
+                <input type="butten" value="7" onclick="livescreen(7)" id="seven" readonly/>
+                <input type="butten" value="8" onclick="livescreen(8)" id="eight" readonly/>
+                <input type="butten" value="9" onclick="livescreen(9)" id="nine" readonly/>
+                <input type="butten" value="*" onclick="livescreen('*')"   readonly/>
+            </div>
+            <div class="margin-row">
+                <input type="butten" value="/" onclick="livescreen('/')" readonly/>
+                <input type="butten" value="0" onclick="livescreen(0)"  id="zero"readonly />
+                <input type="butten" value="." onclick="livescreen('.')" readonly/>
+                <input type="butten" value="=" onclick="result.value = eval(result.value)" readonly/>
+            </div> 
+            </div>
+        </center>
+    </body>
+
+</html>

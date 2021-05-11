@@ -1,0 +1,122 @@
+<html>
+<head>
+    <script src="NN.js" async defer></script>
+<style>
+
+
+
+* {
+    box-sizing: border-box;
+    padding: 0%;
+    margin: 0%;
+    font-family:"open sans",sans-serif ;
+}
+body{
+    background-color: rgb(28, 223, 223);
+    transition: 0.8;
+    -webkit-transition: 0.8;
+    -moz-transition: 0.8;
+    -ms-transition: 0.8;
+    -o-transition: 0.8;
+}
+h1{
+    margin-top: 5vh;
+    text-align: center;
+    margin-bottom: 1.5;
+    color: darkred;
+}
+input {
+    padding: 25px;
+    color:rgb(223, 110, 110);
+    font-size: 1em;
+    cursor: pointer;
+    width: 70px;
+    background-color: #fff;
+    border: none;
+    outline: none;
+   -webkit-border-radius: 4px;
+   -moz-border-radius: 4px;
+   -ms-border-radius: 4px;
+   -o-border-radius: 4px; 
+
+}
+.result {
+    width:59.1%;
+}
+.container {
+    width: 370px;
+}
+.margin-row {
+  margin-bottom:3px;  
+}
+input[type="text"] :hover {
+    background-color: rgb(38, 255, 74);
+}
+input[type="butten"]:hover {
+    background-color: black;
+    color: #fff;
+}
+.clear  {
+    background-color: rgb(231, 16, 44);
+    color: rgb(7, 3, 3);
+}
+button{
+    border: none;
+    background-color: rgb(41,38,38);
+    padding: auto;
+    color:rgb(245, 237, 237);
+    margin:60px;
+    cursor: pointer;
+    outline: none;
+    outline: purple;
+   -webkit-border-radius: 4px;
+   -moz-border-radius: 4px;
+   -ms-border-radius: 4px;
+   -o-border-radius: 4px; 
+    
+}
+</style>
+</head>
+<body>
+    
+    
+    <center>
+        <div class="container">
+
+            <button>D A R K   M O D E </button>
+            <p style="text-align: center;"><a href="calcy.html">click</a></p>
+            <h1>calculater</h1>
+        <div class="margin-row">
+            <input type="text" class="result" id="result" placeholder="result" readonly />
+            <input type="butten" class="clear" onclick="clearscreen()" value="c" readonly/>
+        </div>
+        <div class="margin-row" >
+            <input type="butten" value="1" onclick="livescreen(1)" id="one"  readonly />
+            <input type="butten" value="2" onclick="livescreen(2)" id="two"  readonly/>
+            <input type="butten" value="3" onclick="livescreen(3)" id="three" readonly />
+            <input type="butten" value="+" onclick="livescreen('+')" />
+        </div>
+        <div class="margin-row">
+            <input type="butten" value="4" onclick="livescreen(4)" id="four" readonly />
+            <input type="butten" value="5" onclick="livescreen(5)" id="five"  readonly/>
+            <input type="butten" value="6" onclick="livescreen(6)" id="six"  readonly/>
+            <input type="butten" value="-" onclick="livescreen('-')" readonly/>
+        </div>
+        <div class="margin-row">
+            <input type="butten" value="7" onclick="livescreen(7)" id="seven" readonly/>
+            <input type="butten" value="8" onclick="livescreen(8)" id="eight" readonly/>
+            <input type="butten" value="9" onclick="livescreen(9)" id="nine" readonly/>
+            <input type="butten" value="*" onclick="livescreen('*')"   readonly/>
+        </div>
+        <div class="margin-row">
+            <input type="butten" value="/" onclick="livescreen('/')" readonly/>
+            <input type="butten" value="0" onclick="livescreen(0)"  id="zero"readonly />
+            <input type="butten" value="." onclick="livescreen('.')" readonly/>
+            <input type="butten" value="=" onclick="result.value = eval(result.value)" readonly/>
+        </div> 
+        </div>
+    </center>
+</body>
+
+</html> 
+    
